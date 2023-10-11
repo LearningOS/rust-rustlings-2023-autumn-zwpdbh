@@ -30,3 +30,8 @@
 
 - trait5.rs
   - Specifying Multiple Trait Bounds with the + Syntax
+
+## How to specify lifetime
+
+- lifetimes1.rs
+- lifetimes2.rs
