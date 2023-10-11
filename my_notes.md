@@ -21,4 +21,12 @@
 ## How to use trait
 
 - trait2.rs
+
   - Notice the signature differences for "mut".
+
+- trait4.rs
+
+  - use trait as
+
+- trait5.rs
+  - Specifying Multiple Trait Bounds with the + Syntax
