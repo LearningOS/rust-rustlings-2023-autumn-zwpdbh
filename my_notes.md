@@ -17,3 +17,8 @@
 - generics2.rs
   - How to define a generic struct
   - How to implement generic method for it.
+
+## How to use trait
+
+- trait2.rs
+  - Notice the signature differences for "mut".
