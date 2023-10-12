@@ -58,3 +58,5 @@
   - `result_with_list` could be used to if you want to propagate the first encountered error and return a single result
   - `list_of_results` could be used to collecting all the results and preserving the individual errors.
   - **Understand** `collect`, how the type you declare for values affects how the collect method processes the iterator's output.
+- iterator4.rs
+- iterator5.rs
