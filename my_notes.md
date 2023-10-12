@@ -3,7 +3,11 @@
 ## String
 
 - Append some string
+
   - Keep original string, use `format`
+
+- From other parts
+  - iterator2.rs
 
 # Problems to review
 
@@ -36,10 +40,15 @@
 - lifetimes1.rs
 - lifetimes2.rs
 
-# How to handle panic
+## How to handle panic
 
 - About `panic::catch_unwind`
   - `panic::catch_unwind` typically returns a Result type, where Ok contains the result of the closure if it didn't panic, and Err contains the panic payload (an std::boxed::Box<dyn Any + Send>).
   - By applying .ok() to the result, you convert it into an Option:
     - If the result is an Ok, you get Some(result) with the result of the closure.
     - If the result is an Err (i.e., a panic occurred), you get None.
+
+## Map and Reduce
+
+- iterator2.rs
+  - It also shows examples about how to capitalize first character of a string.
