@@ -51,4 +51,10 @@
 ## Map and Reduce
 
 - iterator2.rs
+
   - It also shows examples about how to capitalize first character of a string.
+
+- iterator3.rs
+  - `result_with_list` could be used to if you want to propagate the first encountered error and return a single result
+  - `list_of_results` could be used to collecting all the results and preserving the individual errors.
+  - **Understand** `collect`, how the type you declare for values affects how the collect method processes the iterator's output.
