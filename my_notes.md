@@ -65,11 +65,15 @@
 
 ## How to convert one type to another
 
-### See conversion examples:
+### value to value:
 
 - `from_str.rs`
 - `from_into.rs`.
 - `try_from_into.rs`
+
+### reference to reference
+
+- `as_ref_muts.rs`
 
 # Concurrency
 
