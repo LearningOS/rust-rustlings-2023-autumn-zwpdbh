@@ -61,11 +61,19 @@
 - iterator4.rs
 - iterator5.rs
 
-
 # Concurrency
 
-## Arc 
-  - arc1.rs 
+## Mutex
 
-## Cow 
-  - cow1.rs ???
+## Arc
+
+- arc1.rs
+
+## Cow
+
+- cow1.rs ???
+
+## Thread
+
+- threads1.rs
+- threads2.rs (Mutex + Arc)
