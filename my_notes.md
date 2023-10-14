@@ -65,6 +65,12 @@
 
 ## How to convert one type to another
 
+### See conversion examples:
+
+- `from_str.rs`
+- `from_into.rs`.
+- `try_from_into.rs`
+
 # Concurrency
 
 ## Mutex
