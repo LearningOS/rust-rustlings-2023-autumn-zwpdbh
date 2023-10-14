@@ -77,3 +77,8 @@
 
 - threads1.rs
 - threads2.rs (Mutex + Arc)
+- threads3.rs
+  - Run `rustlings hint threads3` use some examples to tell us a summary of owership.
+  - multiple-producer, single-consumer
+  - Solution:
+    - clone sender to multiple senders when then use cloned senders in different threads.
