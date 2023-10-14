@@ -31,11 +31,10 @@ where
 // TODO: Add the appropriate trait bound.
 fn num_sq<T>(arg: &mut T)
 where
-    T: AsRef<u32>,
+    T: AsRef<u32> + AsRef<u32>,
 {
-    let v: &u32 = arg.as_ref();
-    let squared: u32 = (*v).pow(2);
-    *arg = squared;
+    let v = (*arg.as_ref()).pow(2);
+    *arg = v;
 }
 
 #[cfg(test)]
