@@ -1,4 +1,4 @@
-# Cheatsheet
+# Basics
 
 ## String
 
@@ -60,6 +60,10 @@
   - **Understand** `collect`, how the type you declare for values affects how the collect method processes the iterator's output.
 - iterator4.rs
 - iterator5.rs
+
+# Others
+
+## How to convert one type to another
 
 # Concurrency
 
