@@ -99,6 +99,8 @@
 
 # Unsafe code
 
+- `tests5.rs`
+- `tests6.rs`
 - How to create raw pointer from other variables?
 
   ```rust
