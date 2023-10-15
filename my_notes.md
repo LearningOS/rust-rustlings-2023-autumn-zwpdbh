@@ -114,3 +114,16 @@
   let address = 0x012345usize;
   let r = address as *const i32;
   ```
+
+# Build
+
+- tests7.rs
+- tests8.rs
+
+# How to call other linked code
+
+- tests9.rs ???
+  - Use `#[no_mangle]` to export to lib.
+  - Use `extern` + `#[link(name = xxx)]` to import
+    - The externally imported functions are declared in the extern blocks, with a semicolon to mark the end of signature instead of curly braces.
+    - Some attributes can be applied to those function declarations to modify the linking behavior, such as #[link_name = ".."] to modify the actual symbol names.
