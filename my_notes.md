@@ -96,3 +96,19 @@
   - multiple-producer, single-consumer
   - Solution:
     - clone sender to multiple senders when then use cloned senders in different threads.
+
+# Unsafe code
+
+- How to create raw pointer from other variables?
+
+  ```rust
+  // values: &mut [i32]
+  let ptr = values.as_mut_ptr();
+
+  let mut num = 5;
+  let r1 = &num as *const i32;
+  let r2 = &mut num as *mut i32;
+
+  let address = 0x012345usize;
+  let r = address as *const i32;
+  ```
