@@ -1,4 +1,4 @@
-# Cheatsheet
+# Basics
 
 ## String
 
@@ -61,11 +61,69 @@
 - iterator4.rs
 - iterator5.rs
 
+# Others
+
+## How to convert one type to another
+
+### value to value:
+
+- `from_str.rs`
+- `from_into.rs`.
+- `try_from_into.rs`
+
+### reference to reference
+
+- `as_ref_muts.rs` ???
 
 # Concurrency
 
-## Arc 
-  - arc1.rs 
+## Mutex
 
-## Cow 
-  - cow1.rs ???
+## Arc
+
+- arc1.rs
+
+## Cow
+
+- cow1.rs ???
+
+## Thread
+
+- threads1.rs
+- threads2.rs (Mutex + Arc)
+- threads3.rs
+  - Run `rustlings hint threads3` use some examples to tell us a summary of owership.
+  - multiple-producer, single-consumer
+  - Solution:
+    - clone sender to multiple senders when then use cloned senders in different threads.
+
+# Unsafe code
+
+- `tests5.rs`
+- `tests6.rs`
+- How to create raw pointer from other variables?
+
+  ```rust
+  // values: &mut [i32]
+  let ptr = values.as_mut_ptr();
+
+  let mut num = 5;
+  let r1 = &num as *const i32;
+  let r2 = &mut num as *mut i32;
+
+  let address = 0x012345usize;
+  let r = address as *const i32;
+  ```
+
+# Build
+
+- tests7.rs
+- tests8.rs
+
+# How to call other linked code
+
+- tests9.rs ???
+  - Use `#[no_mangle]` to export to lib.
+  - Use `extern` + `#[link(name = xxx)]` to import
+    - The externally imported functions are declared in the extern blocks, with a semicolon to mark the end of signature instead of curly braces.
+    - Some attributes can be applied to those function declarations to modify the linking behavior, such as #[link_name = ".."] to modify the actual symbol names.
